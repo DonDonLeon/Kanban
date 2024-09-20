@@ -175,6 +175,16 @@ ul{
     position: relative;
 }
 
+.container__gradient{
+    background: radial-gradient(circle 300px at 66%,rgba(43, 239, 181, 0.16), transparent),
+                      radial-gradient(circle 300px at 33% 90%,rgba(43, 239, 181, 0.16), transparent);    
+}
+
+.banner-gradient{
+    background: radial-gradient(circle 300px at 71% 38%,rgba(43, 239, 181, 0.16), transparent),
+                radial-gradient(circle 300px at 33% 60%,rgba(43, 239, 181, 0.16), transparent);
+}
+
 .header{
     border-bottom: 1px solid #EDEDED;
 
@@ -368,7 +378,7 @@ ul{
                 height: 100%;
                 top: 0;
                 margin: 0;
-                padding-top: 39px;
+                padding: 45px 0;
                 background-color: white;
                 z-index: 1000;
                 border: none;
@@ -617,14 +627,10 @@ ul{
 .plugins{
     padding-top: 150px;
     background: linear-gradient(360deg, rgba(227, 240, 252, 0) 0%, #E3F0FC 100%);
-    
+
     .plugins-text{
         margin-top: 16px;
         color:#3B3B3B;
-    }
-
-    .plugins_title{
-        word-break: break-all;
     }
 
     .plugins__inner{
@@ -632,37 +638,46 @@ ul{
         gap: 25px;
         margin-top: 78px;
         margin-bottom: 40px;
-        
+        width: 100%;
+        max-width: 1400px;
+
+
         .plugin__card{
-            padding: 20px 40px 24px 20px; 
-            height: 329px;
+            min-height: 329px;
             width: 100%;
             border-radius: 16px;
             background:#FFFFFF;
             opacity: 0.95; 
             position: relative;
+            
+            img{
+                margin:20px 0 0 20px;
+            }
 
             .plugins__card-title{
                 margin-bottom: 9px;
+                margin-left: 20px;
             }
 
             .card-text{
+                margin-left: 20px;
+                margin-right: 40px;
                 margin-bottom: 9px;
+            
+                @media (max-width:1031px) {
+                    margin-bottom: 18px;
+                }
             }
 
             .link-more{
                 position: absolute;
-                bottom: 0;
-                margin-bottom: 24px;
+                bottom:24px;
+                width:100%;
+                margin-left: 20px;  
             }
-
-            @media(max-width:1140px) {
-                height: 350px;
-            }
-
         }
 
-        @media (max-width:1031px) {
+        @media (max-width:1000px) {
             flex-direction: column;
             align-items: center;
         }
@@ -672,7 +687,6 @@ ul{
 .banner{
     background: linear-gradient(180deg, #E3F0FC 100%, #E3F0FC 100%);
     padding-top: 151px;
-    padding-bottom: 136px;
 
     .banner__inner{
         margin-top: 58px;
@@ -759,7 +773,7 @@ ul{
             background-position: bottom right; 
         }
 
-        @media(max-width:1040px) {
+        @media(max-width:900px) {
             flex-direction: column;
             width: 100%;
         }
@@ -772,14 +786,13 @@ ul{
 
     .offer__box{
         background: linear-gradient(90deg, #4079EA 0%, #46C3E4 100%);
-        width: 100%;
         height: 312px;
         border-radius: 20px;
         position: relative;
 
         .offer__box-info{
             position: absolute;
-            margin-top: -50px;
+            margin-top: -40px;
             width: 100%;
             height: 400px;
             background-repeat: no-repeat;
@@ -837,7 +850,7 @@ ul{
 }
 
 .tools{
-    padding-bottom: 98px;
+    padding-bottom: 40px;
     background-image: linear-gradient(#E3F0FC,#FFFFFF);
     padding-top: 138px;
 
