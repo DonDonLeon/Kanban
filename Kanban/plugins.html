@@ -34,11 +34,16 @@
                 </div>
 
                 <div class="header__inner-info">
-                    <p>Support</p>
-                    <button class="lang">
-                        En
+                    <a class="inner__info-text" href="">Support</a>
+                    <div class="header__switcher">
+                        <select name="" id="" class="header__switcher-lang">
+                            <option value="en" selected>En</option>
+                            <option value="ru">Ru</option>
+                            <option value="fr">Fr</option>
+                            <option value="es">Es</option>
+                        </select>
                         <img src="img/arrow/arrow-down.svg" alt="">
-                    </button>
+                    </div>  
                     <button class="button">Get a Free Demo</button>
                 </div>
 
@@ -63,7 +68,7 @@
 
             <div class="header__plugins">
                 <div class="header__plugins-menu">
-                    <h5>PLUGINS</h5>
+                    <h6>PLUGINS</h6>
                     <ul class="plugins__list">
                         <li class="item__list">
                             <img src="img/redmin_plugins/Timesheet.jpg" alt="">
@@ -93,7 +98,7 @@
 
             <div class="header__themes">
                 <div class="header__themes-menu">
-                    <h5>THEMES</h5>
+                    <h6>THEMES</h6>
                     <ul class="themes__list">
                         <li class="item__list">
                             <img src="img/redmin_themes/dark.jpg" alt="">
@@ -132,7 +137,7 @@
                         Visualize your workflow, manage WIP and priorities, enhance team efficiency with the Kanban Board plugin.
                     </p>
                     <button class="button btn-arrow">
-                        <div>
+                        <div class="btn-text">
                             <p>Download</p>
                             <div class="img__arrow">
                                 <img src="img/arrow/arrow-btn.svg" alt="">
@@ -164,10 +169,10 @@
                 </ul>
                 <div class="tools__swiper-box">
                     <div class="tools__swiper-info">
-                        <h3>
+                        <h3 class="tools__swiper-title">
                             Blocking tasks
                         </h3>
-                        <p class="description_plugin">
+                        <p class="description_under">
                             Block tasks that cannot be worked on further. Specify the reasons for blocking to always keep factors affecting task completion under control. Blocked tasks will be highlighted in red on your Kanban board so that you always know what to pay attention to first.
                         </p>
                     </div>
@@ -182,25 +187,98 @@
 
     <section class="offer">
         <div class="container">
+            <div class="offer__box-special"></div>
             <div class="offer__box">
-                <div class="offer__box-info --special">
-                    <h2 class="offer__box-title">Special offer</h2>
-                    <p class="offer__box-text description ">
-                        buy 2 plugins PRO version (advanced checklist & kanban board)
-                    </p>
-                    <button class="offer__box-btn btn-arrow">
-                        <div>
-                            <p>Buy 350€</p>
-                            <div class="img__arrow">
-                                <img src="img/arrow/arrow-btn-dark.svg" alt="">
-                            </div>
+                <h2 class="offer__box-title">Special offer</h2>
+                <p class="offer__box-text description ">
+                    buy 2 plugins PRO version (advanced checklist & kanban board)
+                </p>
+                <button class="offer__box-btn btn-arrow">
+                    <div class="btn-text">
+                        <p>Buy 350€</p>
+                        <div class="img__arrow">
+                            <img src="img/arrow/arrow-btn-dark.svg" alt="">
                         </div>
-                    </button>
-                </div>
+                    </div>
+                </button>
             </div>
         </div>
     </section>
-    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                
+                <div class="footer__box-links">
+
+                    <div class="footer__links-logo">
+                        <img src="img/logo.svg" alt="logo">
+                        <p><span>Redmine </span>Kanban</p>
+                    </div>
+                    
+                    <ul class="footer__links-menu">
+                        <li class="footer__menu-item">
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="">Contacts</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="">Terms and Conditions</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="">support@redmine-kanban.com</a>
+                        </li>
+                    </ul>
+
+                </div>
+                
+                <div class="footer__box-contacts">
+                    <h4 class="footer__contacts-title">Our plugins will help you stay organized and ensure that all necessary tasks are completed throughout the project lifecycle.</h4>
+                    <p class="description_under footer__contacts-text">Fill out the form and we will contact you</p>
+                    <form action="" class="footer__contacts-form">
+
+                        <div class="footer__form-item">
+                            <input type="text" class="footer__form-input" required>
+                            <label class="footer__form-label">Name</label>
+                        </div>
+
+                        <div class="footer__form-item">
+                            <input type="text" class="footer__form-input" required>
+                            <label class="footer__form-label">Email</label>
+                        </div>
+
+                        <div class="footer__form-item">
+                            <input type="text" class="footer__form-input" list="types" required>
+                            <label class="footer__form-label">Type</label>
+                            <datalist id="types">
+                                <option value="Naples">
+                                <option value="London">
+                                <option value="Berlin">
+                                <option value="New York">
+                                <option value="Frattamaggiore">
+                            </datalist>
+                        </div>
+
+                        <div class="footer__form-item">
+                            <textarea name="" id="" class="footer__form-input --textarea-input" required ></textarea>
+                            <label class="footer__form-label --textarea-label">Text</label>
+                        </div>
+
+                        <button class="button btn-arrow">
+                            <div class="btn-text">
+                                <p>Send</p>
+                                <div class="img__arrow">
+                                    <img src="img/arrow/arrow-btn.svg" alt="">
+                                </div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            
+            </div>
+        </div>
+    </footer>
 
 <script src="js/menu-list.js"></script>
 <script src="js/burger.js"></script>
